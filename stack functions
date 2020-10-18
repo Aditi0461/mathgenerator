@@ -1,0 +1,27 @@
+def isempty(stk):
+    if stk==[]
+        return True
+    else:
+        return False
+def Pop(stk):
+    if isempty(stk):
+        return "underflow"
+def Push(stk,item):
+    stk.append(item)
+    top=len(stk)-1
+    else:
+        item=stk.pop()
+        if len(stk)==0:
+            top=None
+        else:
+            top=len(stk)-1
+        return item
+stack=[]
+top=None
+item=int(input("enter elements:"))
+Push(stack,item)
+print(stack)
+a=Pop(stack)
+print(a,stack)
+
+
