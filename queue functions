@@ -1,0 +1,28 @@
+def isempty(Qu):
+    if Qu==[]:
+        return True
+    else:
+        return False
+def enqueue(Qu,item):
+    Qu.append(item)
+        if len(Qu)==1:
+            front=rear=0
+        else:
+            rear=len(Qu)-1
+def dequeue(Qu):
+    if isempty(Qu):
+        return "underflow"
+    else:
+        item=Qu.pop(0)
+    if len(Qu)==0:
+        front=rear=None
+    return item
+Q=[]
+item=int(input("enter any number:"))
+enqueue(Q,item)
+print(Q)
+a=dequeue(Q)
+print(Q,"deleted item is",a)
+
+        
+
